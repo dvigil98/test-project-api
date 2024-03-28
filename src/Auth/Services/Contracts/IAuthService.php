@@ -4,5 +4,6 @@ namespace Src\Auth\Services\Contracts;
 
 interface IAuthService
 {
-    public function getUserByEmail($email);
+    public function login($email, $password);
+    public function logout();
 }
